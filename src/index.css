@@ -18,11 +18,14 @@ footer {
   height:60px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color:rgba(66, 85, 58, 0.315);
+  background-color:rgba(0, 0, 0, 0.233);
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
 }
 .container {
   margin-top: 4em;
+}
+header {
+  background-color:rgba(0, 0, 255, 0.534);
 }
