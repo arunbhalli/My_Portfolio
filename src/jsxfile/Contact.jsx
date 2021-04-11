@@ -2,9 +2,9 @@ import React from "react";
 
 const encode = (data) => {
   return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -14,14 +14,14 @@ class ContactForm extends React.Component {
 
   /* Here’s the juicy bit for posting the form submission */
 
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "contact", ...this.state }),
     })
       .then(() => alert("Success!"))
-      .catch(error => alert(error));
+      .catch((error) => alert(error));
 
     e.preventDefault();
   };
@@ -32,19 +32,39 @@ class ContactForm extends React.Component {
     const { name, email, message } = this.state;
     return (
       <form onSubmit={this.handleSubmit} netlify name="contact">
+        <div>
+          <h1 className="h1"> You can contact me by using this form.</h1>
+        </div>
         <p className="cont">
           <label>
-            Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+            Your Name:{" "}
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={this.handleChange}
+            />
           </label>
         </p>
         <p className="cont">
           <label>
-            Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+            Your Email:{" "}
+            <input
+              type="email"
+              name="email"
+              value={email}
+              onChange={this.handleChange}
+            />
           </label>
         </p>
         <p className="cont">
           <label>
-            Message: <textarea name="message" value={message} onChange={this.handleChange} />
+            Message:{" "}
+            <textarea
+              name="message"
+              value={message}
+              onChange={this.handleChange}
+            />
           </label>
         </p>
         <p className="cont">
