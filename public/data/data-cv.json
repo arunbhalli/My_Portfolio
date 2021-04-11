@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Personal Info",  
+    "items": [
+      {
+        "title": "Contact Information",
+        "data": {
+          "address": "Sadalgatan 143 ",
+          "city": "Stockholm",
+          "country": "Sweden",
+          "phone": "+46737166126",
+          "email": "aruntomar8532014821@gmail.com",
+          "github": "arunbhalli"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Work Experience",
+    "items": [
+      {
+        "title": "Front Desk Manager",
+        "data": {
+          "period": "Jan 2018 - Descember 2019",        
+          "organisation": "Hotel seven Hills Tower",
+          "place": "Agra India"
+        }
+      },    
+      {
+        "title": "Front Desk Executive",
+        "data": {
+          "period": "2017 - 2018",        
+          "organisation": "G-Hotel Agra",
+          "place": "Agra India"
+        }
+      }
+    ]    
+  },
+  {
+    "name": "Education",
+    "items": [    
+      {
+        "title": "Intermediate",
+        "data": {
+          "period": "2014 - 2016",
+          "city": "Agra",
+          "country": "india",
+          "speciality": "Maths",
+          "College": "PTJP Inter College"
+        }
+      },
+      {
+        "title": "Fullstack Web Developer",
+        "data": {
+          "period": "March 2021 - June 2021",
+          "city": "Stockholm",
+          "country": "Sweden",
+          "speciality": "Web Development",
+          "bootcamp": "Craft Academy"
+        }
+      }
+    ]    
+  }
+]

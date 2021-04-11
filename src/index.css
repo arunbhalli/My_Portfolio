@@ -1,12 +1,3 @@
-body {
-  color: #fff;
-  margin-bottom: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -33,7 +24,7 @@ footer {
 /* /////Header///// */
 
 html body {
-  background-image: url("/src/image/back6.png");
+  background-image: url("/src/image/back2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -54,6 +45,9 @@ p {
   padding-left: 150px;
   padding-bottom: 2%;
   padding-right: 150px;
+  text-decoration: underline;
+  text-decoration-color: red;
+
 }
 .container-grid {
   padding-bottom: 80px;
@@ -118,4 +112,13 @@ button:hover {
   font-size:50px;
   margin-left: 10%;
   font-weight:20px;
+}
+.aboutpage{
+  padding-top:40px;
+}
+#about-header{
+  margin-left:40%;
+  margin-top:10%;
+  text-decoration: underline;
+  text-decoration-color: red;
 }
