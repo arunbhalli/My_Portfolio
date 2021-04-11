@@ -10,7 +10,7 @@ const ListTitles = ({section}) => {
   <>
     {
       section.items.map((item) => 
-        <Header as='h3' style={{ color: 'white' }} data-cy={ToFitDataCy(item.title)}>            
+        <Header as='h3' style={{ color: 'white',paddingBottom:"30px" ,paddingTop:"50px"}} data-cy={ToFitDataCy(item.title)}>            
           {`${item.title}`}
         </Header>
       )
@@ -39,7 +39,7 @@ const SectionCV = ({section}) => {
   
   return (
     <Container text className="res">      
-      <Header as='h2' style={{ color: 'white' }}  data-cy={`${ToFitDataCy(section.name)}-header`}>
+      <Header as='h2' style={{ color: 'white',paddingBottom: '25px', textDecoration:"underline red",}}  data-cy={`${ToFitDataCy(section.name)}-header`}>
         {section.name}
       </Header>
       <Grid columns='2' relaxed="very" className="col1">

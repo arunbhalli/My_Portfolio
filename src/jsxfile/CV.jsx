@@ -25,7 +25,7 @@ class CV extends Component {
 
     return (
       <Container data-cy='cv' className="res">
-        <Header as='h1' style={{ color: 'white' }}   data-cy="cv-header">My CV</Header>
+        <Header as='h1' style={{ color: 'white', textDecoration:"underline red " }}   data-cy="cv-header">My CV</Header>
         <Divider/>
         <p>{sectionList}</p>
       </Container>
