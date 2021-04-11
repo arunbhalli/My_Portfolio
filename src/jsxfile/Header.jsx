@@ -31,8 +31,8 @@ const Header = () => {
         as={NavLink}
         to={{ pathname: "/contact" }}
       />
-      <div id='buttons' style={{ marginLeft:"40%"}}>
-        <a href='https://www.linkedin.com/in/sanne-lindholm/'>
+      <div id='buttons' style={{ marginLeft:"50%"}}>
+        <a href='https://www.linkedin.com/in/arun-tomar-206452128/'>
           <Button animated='vertical' basic color='white'>
             <Button.Content hidden>
               <Icon name='linkedin' />
@@ -40,7 +40,7 @@ const Header = () => {
             <Button.Content visible style={{ color: 'white'}}>LinkedIn</Button.Content>
           </Button>
         </a>
-        <a href='https://github.com/salindholm'>
+        <a href='https://github.com/arunbhalli'>
           <Button animated='vertical' basic color='white'>
             <Button.Content hidden>
               <Icon name='github' />
