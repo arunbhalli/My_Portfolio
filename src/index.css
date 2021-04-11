@@ -122,3 +122,21 @@ button:hover {
   text-decoration: underline;
   text-decoration-color: red;
 }
+.desc{
+  font-size: 20px;
+  margin-right:30%;
+  font-family:fantasy;
+}
+.res{
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+.col1{
+  border: 5px solid rgb(106, 182, 196);
+  border-radius: 20px; 
+}
+.col2{
+  border: 3px solid rgb(106, 182, 196);
+  border-radius: 20px; 
+  color: #fff;
+}
