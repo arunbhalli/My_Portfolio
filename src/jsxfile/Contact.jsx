@@ -32,22 +32,22 @@ class ContactForm extends React.Component {
     const { name, email, message } = this.state;
     return (
       <form onSubmit={this.handleSubmit} netlify name="contact">
-        <p>
+        <p className="cont">
           <label>
             Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
           </label>
         </p>
-        <p>
+        <p className="cont">
           <label>
             Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
           </label>
         </p>
-        <p>
+        <p className="cont">
           <label>
             Message: <textarea name="message" value={message} onChange={this.handleChange} />
           </label>
         </p>
-        <p>
+        <p className="cont">
           <button type="submit">Send</button>
         </p>
       </form>

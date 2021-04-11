@@ -77,3 +77,15 @@ p {
   border-radius: 50%;
 
 }
+input {
+  
+  width: 100%;
+}
+/* input[type=text] {
+  font-size: 60px;
+  background-color: white;
+  padding-left: 40px;
+} */
+.cont{
+  font-size: 60px;
+}
