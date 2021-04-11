@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  color: #fff;
+  margin-bottom: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -18,14 +19,61 @@ footer {
   height:60px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color:rgba(0, 0, 0, 0.233);
+  background-color:rgba(14, 74, 102, 0.815);
   margin-top: 0;
   margin-bottom: 0;
   text-align: center;
+  position: fixed;
 }
 .container {
-  margin-top: 4em;
+  color: white;
+  text-align: center;
 }
-header {
-  background-color:rgba(0, 0, 255, 0.534);
+
+
+/* /////Header///// */
+
+html body {
+  background-image: url("/src/image/back6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+h1 {
+  font-size:;
+  color:whitesmoke;
+}
+p {
+  color:#fff;
+  text-align: center;
+}
+#projects-header {
+  padding-left: 150px;
+  padding-bottom: 2%;
+  padding-right: 150px;
+}
+.container-grid {
+  padding-bottom: 80px;
+  border-radius: 50%;
+  margin: auto;
+  padding-left: 150px;
+}
+.pr{
+  padding-bottom: 30px;
+  padding-left: 20px;
+}
+.img{
+  height: 320px;
+  border-radius:100%;
+  border-bottom: 20px;
+}
+.Myprof{
+  opacity: 1;
+  transform: scale(1.03);
+  border-radius: 50%;
+
 }

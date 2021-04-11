@@ -1,6 +1,6 @@
 describe("User can  see lisy of Projects", () => {
   beforeEach(() => {
-    cy.visit("https://localhost:3000");
+    cy.visit("http://localhost:3000");
     cy.get("#projects-tab").click();
   });
 
