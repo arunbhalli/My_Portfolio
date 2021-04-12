@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Restaurant Project",
     "image": "/image/sai-restaurant.png",
-    "description": "An application for making fun of the former president of the United States!",
+    "description": "An application for restaurant to show details of there restaurant.",
     "github": "https://github.com/arunbhalli/sai-restaurant.git",
     "url": "https://trumpster-dumpster.netlify.app/"
 
@@ -44,7 +44,7 @@
     "id": 6,
     "name": "Guessing Game with Python",
     "image": "/image/guessing No.png",
-    "description": "An  withdrawing money from Atm",
+    "description": "Game to guess no in 5 attempts",
     "github": "hhttps://github.com/arunbhalli/Faulty-calculator-with-python.git",
     "url": "https://trumpster-dumpster.netlify.app/"
   },
@@ -52,7 +52,7 @@
     "id": 7,
     "name": "My Library Project ",
     "image": "/image/library.png",
-    "description": "An application withdrawing money from Atm",
+    "description": "Library project to keep data of present books and rented books",
     "github": "https://github.com/arunbhalli/library-challenge.git",
     "url": "https://trumpster-dumpster.netlify.app/"
   }

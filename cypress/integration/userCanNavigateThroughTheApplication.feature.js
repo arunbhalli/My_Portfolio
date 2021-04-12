@@ -1,24 +1,18 @@
+
 describe("User can navigate the app", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000");
   });
   describe("to About tab and it", () => {
     beforeEach(() => {
-      cy.get("#about-tab").click();
+      cy.get("[data-cy=about-tab]").click();
     });
-
-    it("displays about Me Header", () => {
-      cy.get("#about-header").should("contain", "About Me");
+    it("displays About Me header", () => {
+      cy.get("[data-cy=about-header]").should("contain", "About Me");
     });
-    it("displays componenet name in url", () => {
-      cy.url().should("contain", "About");
-    });
-    it("does not display My Projects header", () => {
-      cy.get("#projects-header").should("not-exist");
-    });
-    it("does not display Hello World", () => {
-      cy.get("#hello").should("not-exist");
-    });
+    cy.get("#projects-header").should("not.exist");
+    cy.get("#cv-header").should("not.exist");
+    cy.get("#contact-header").should("not.exist");
   });
   describe("to My Projects tab and it", () => {
     beforeEach(() => {
@@ -34,27 +28,25 @@ describe("User can navigate the app", () => {
     it("does not display  About Me header", () => {
       cy.get("#about-header").should("not-exist");
     });
-    it("does not display Hello World", () => {
-      cy.get("#hello").should("not-exist");
-    });
+    cy.get("#cv-header").should("not.exist");
+    cy.get("#contact-header").should("not.exist");
   });
-  describe("back to My Portfolio/Hello tab and it", () => {
+  describe("back to My cv tab and it", () => {
     beforeEach(() => {
-      cy.get("#about-tab").click();
-      cy.get("header").click();
+      cy.get("#cv-tab").click();
     });
-
-    it("displays Hello World", () => {
-      cy.get("#hello").should("contain", "Hello");
+      cy.get("#cv-header").should("contain", "CV");
+      cy.get("#about-header").should("not.exist");
+      cy.get("#contact-header").should("not.exist");
+      cy.get("#projects-header").should("not.exist");
     });
-    it("displays componenet name in url", () => {
-      cy.url().should("contain", "Hello");
-    });
-    it("does not display My Projects header", () => {
-      cy.get("#projects-header").should("not-exist");
-    });
-    it("does not display Hello World", () => {
-      cy.get("#about-header").should("not-exist");
+  describe("back to My cv tab and it", () => {
+    beforeEach(() => {
+      cy.get("#contact-tab").click();
+      });
+      cy.get("#contact-header").should("contain", "Contact");
+      cy.get("#about-header").should("not.exist");
+      cy.get("#cv-header").should("not.exist");
+      cy.get("#projects-header").should("not.exist");
     });
   });
-});
